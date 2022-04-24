@@ -1,0 +1,75 @@
+<!-- <div class="emr-header">
+    <div class="row">
+        <div class="col-4 align-self-center">
+            <div class="emr-text-title">
+                {{option?.title}}
+            </div>
+        </div>
+        <div class="col-5 search-header">
+            <app-search
+                *ngIf="option?.search"
+                (callback)="onChangeValueInputSearch($event)"
+            ></app-search>
+        </div>
+        <div class="col-3 header-info">
+            <div class="header-info-item d-flex alig-items-center justify-content-end">
+                <app-user-profile class="profile" (callBack)="logout()"></app-user-profile>
+            </div>
+        </div>
+    </div>
+</div> -->
+<header class="show-desktop">
+    <!-- <div class="header-title">
+        <img src="{{globals.urlFolder}}png/Back.png" alt="">
+        <h6>Thanh toán</h6>
+    </div> -->
+    <div class="header-title" >
+        <!-- <img src="{{globals.urlFolder}}png/Back.png" alt=""> -->
+        <ng-container *ngFor="let item of listValue">
+            <img *ngIf="item.path === url && item.back === true" src="{{globals.urlFolder}}png/Back.png" alt="" (click)="back(item.backUrl)">
+            <h6 *ngIf="item.path === url">{{item.title}}</h6>
+            <ng-container *ngIf="item.path !== url && item.showId === true && item.back === true">
+                <img src="{{globals.urlFolder}}png/Back.png" (click)="back(item.backUrl)" alt="">
+                <h6>{{item.title}}</h6>
+            </ng-container>
+            
+        </ng-container>
+    </div>
+    <ul class="header-admin">
+        <!-- <li>
+            <div class="box-img">
+                <img src="{{globals.urlFolder}}png/Search.png">
+            </div>
+        </li> -->
+        <li class="avatar" [matMenuTriggerFor]="menu">
+            <div class="box-img">
+                <img src="{{globals.urlFolder}}png/Avatar.png">
+            </div>
+        </li>
+        <mat-menu #menu="matMenu">
+            <!-- <button
+                mat-menu-item
+                class="menu-button"
+                (click)="profileDetail()"
+            >
+                <mat-icon>account_circle</mat-icon> {{'PROFILE' | translate }}
+            </button> -->
+            <button
+                mat-menu-item
+                style="outline: none;"
+                class="menu-button"
+                (click)="logout()"
+            >
+                <mat-icon>exit_to_app</mat-icon> log out
+            </button>
+        </mat-menu>
+    </ul>
+</header>
+
+<header class="show-mobile">
+    <div class="header-title">
+        <img src="{{globals.urlFolder}}png/Back.png" alt="">
+        <h6>Thanh toán</h6>
+        <img src="{{globals.urlFolder}}png/More1.png" class="more" style="opacity: 0;">
+    </div>
+</header>

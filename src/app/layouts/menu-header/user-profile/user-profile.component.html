@@ -1,0 +1,21 @@
+<div class="profile">
+    <div class="left">
+        <div class="name">
+            {{data.name}}
+        </div>
+        <div class="title">
+            {{data.title}}
+        </div>
+    </div>
+    <div
+        class="right" [ngClass]="{'style-img': !(data.img && !data.img.includes('logo.jpg') )}"
+        mat-button
+        [matMenuTriggerFor]="menu"
+        [style.background-image]="data.img && !data.img.includes('logo.jpg') ? 'url(' + data.img + ')' : 'url(assets/svg/logo-big.svg)'"
+    >
+    </div>
+</div>
+<mat-menu #menu="matMenu">
+    <!-- <button mat-menu-item>Profile</button> -->
+    <button mat-menu-item (click)="callBack.emit()">Log out<mat-icon>exit_to_app</mat-icon></button>
+</mat-menu>

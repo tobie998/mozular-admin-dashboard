@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import 'variables';
+@import 'mixins';
+@import 'main';
+@import 'sidebar';
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    position: relative;
+}
+.wrapper.sidebar-fixed{
+    display: block;
+}
+.show-desktop{
+    display: flex;
+    @include mobile{
+        display: none;
+    }
+}
+.show-mobile{
+    display: none;
+    @include mobile{
+        display: flex;
+    }
+}

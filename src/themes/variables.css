@@ -1,0 +1,54 @@
+/*  White color */
+/* Black color */
+/* Primary color */
+/* Gradient */
+/* Alert color*/
+/*  White color */
+/* Black color */
+/* Text color */
+/* Primary color */
+/* Gradient */
+/* Alert color*/
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(./../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(./../fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(./../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(./../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(./../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(./../fonts/Nunito-Regular.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.member-deactive {
+  color: #FF3E33 !important;
+}
+
+.member-active {
+  color: #21AB36 !important;
+}/*# sourceMappingURL=variables.css.map */

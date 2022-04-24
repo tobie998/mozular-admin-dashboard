@@ -1,0 +1,16 @@
+<div class="main-content">
+    <ng-container *ngFor="let item of dataInput">
+        <div class="time-tracker" (click)="showDetail(item)">
+
+            <img [src]="item.image1">
+            <span> {{item.name}} </span>
+    
+        </div>
+    </ng-container>
+    
+    <!-- <div class="moz-check">
+
+        <img src="{{globals.urlFolder}}png/instagram.png">
+        <span> Moz Check </span>
+    </div> -->
+</div>

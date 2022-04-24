@@ -1,0 +1,69 @@
+<!-- <section class="register confirmation" *ngIf="success === false">
+    <header class="header">
+        <span (click)="back('/sign-up')">
+            <img src="{{globals.urlFolder}}svg/arrow-left.svg" alt="">
+            <h7>Nhập mã xác thực</h7>
+        </span>
+    </header>
+
+    <div class="main">
+        <div class="main-info">
+            <img src="{{globals.urlFolder}}png/confirm-background.png" alt="">
+        </div>
+
+        <div class="main-input">
+            <label>Chúng tôi vừa gửi mã xác nhận của bạn qua email: qu********08@gmail.com.
+                Vui lòng kiểm tra email của bạn và nhập mã xác nhận vào ô bên dưới.
+            </label>
+            <div class="input-holder">
+                <input type="text" #input0 [(ngModel)]="code[0]" maxlength="7" (ngModelChange)="channgeFocus(1)">
+                <input type="text" #input1 [(ngModel)]="code[1]" maxlength="1" (ngModelChange)="channgeFocus(2)">
+                <input type="text" #input2 [(ngModel)]="code[2]" maxlength="1" (ngModelChange)="channgeFocus(3)">
+                <input type="text" #input3 [(ngModel)]="code[3]" maxlength="1" (ngModelChange)="channgeFocus(4)">
+                <input type="text" #input4 [(ngModel)]="code[4]" maxlength="1" (ngModelChange)="channgeFocus(5)">
+                <input type="text" #input5 [(ngModel)]="code[5]" maxlength="1" >
+            </div>
+        </div>
+
+        <div class="main-btn">
+            <button class="btn-resend">Gửi lại ({{time}}s)</button>
+            <button class="btn-cf" (click)="confirm()">XÁC NHẬN</button>
+        </div>
+    </div>
+</section> -->
+<div class="main">
+    <div class="main-info">
+        <img src="{{globals.urlFolder}}png/confirm-background.png" alt="">
+    </div>
+
+    <div class="main-input">
+        <label>Chúng tôi vừa gửi mã xác nhận của bạn qua email: {{textEmail}}.
+            Vui lòng kiểm tra email của bạn và nhập mã xác nhận vào ô bên dưới.
+        </label>
+        <div class="input-holder">
+            <input type="text" #input0 [(ngModel)]="code[0]" maxlength="7" (ngModelChange)="channgeFocus(1)">
+            <input type="text" #input1 [(ngModel)]="code[1]" maxlength="7" (ngModelChange)="channgeFocus(2)">
+            <input type="text" #input2 [(ngModel)]="code[2]" maxlength="7" (ngModelChange)="channgeFocus(3)">
+            <input type="text" #input3 [(ngModel)]="code[3]" maxlength="7" (ngModelChange)="channgeFocus(4)">
+            <input type="text" #input4 [(ngModel)]="code[4]" maxlength="7" (ngModelChange)="channgeFocus(5)">
+            <input type="text" #input5 [(ngModel)]="code[5]" maxlength="1" >
+        </div>
+    </div>
+
+    <div class="main-btn">
+        <button class="btn-resend">Gửi lại ({{time}}s)</button>
+        <button class="btn-cf" (click)="confirm()">XÁC NHẬN</button>
+    </div>
+</div>
+<!-- <section class="register success" *ngIf="success === true">
+    <div class="success-info">
+        <img src="{{globals.urlFolder}}png/succes.png" alt="">
+         
+    </div>
+
+    <div class="success-text">Your password was set successfully.</div>
+
+    <div class="success-btn">
+        <button class="btn" (click)="back('/login')">Quay lại trang đăng nhập</button>
+    </div>
+</section> -->

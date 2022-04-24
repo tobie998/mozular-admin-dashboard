@@ -1,0 +1,280 @@
+@import "./variables.scss";
+.login-layout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    .login {
+        // padding: 0 1rem;
+        // margin: 2rem 0;
+    
+        .login-card {
+            margin-bottom: 2rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            // svg {
+            //     width: 100%;
+            //     height: 100%;
+            // }
+        }
+    
+        .login-form {
+            font-family: 'Montserrat';
+    
+            h3 {
+                font-family: "Montserrat-SemiBold" !important;
+                font-size: 1.59375rem;
+                font-weight: 600;
+                line-height: 31px;
+                color: $text-color-0;
+                margin-bottom: 1.5rem;
+            }
+    
+            .form-main {
+    
+                .main-input {
+    
+                    label {
+                        font-family: "Montserrat-Medium";
+                        font-size: 0.875rem;
+                        // font-weight: 500;
+                        line-height: 18px;
+                        letter-spacing: -1%;
+                        color: $text-color-5;
+                    }
+    
+                    input[type="text"],
+                    input[type="password"]
+                     {
+                        width: 100%;
+                        display: block;
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px solid $border-color-4;
+                        padding: 0.75rem 0;
+                        font-size: 1rem;
+                        background: inherit;
+                    }
+    
+                    ::placeholder {
+                        font-family: "Montserrat-Medium";
+                        font-size: 1rem;
+                        font-weight: 500;
+                        line-height: 24px;
+                        color: $text-color-5;
+                    }
+    
+                    input:focus {
+                        border-bottom: 2px solid $border-color-7;
+                        // background: url(../images/Delete.png) no-repeat 100%;
+                        background-size: 24px;
+                    }
+    
+                    input:focus::-webkit-input-placeholder {
+                        color: $text-color-1;
+                        font-weight: 500;
+                    }
+    
+                    input[type="password"] {
+                        font-size: 1.5rem;
+                        font-family: monospace;
+                        height: 48px;
+                        padding: 0.75rem 0;
+                    }
+                }
+    
+                .username-input {
+                    margin-bottom: 1.375rem;
+                    position: relative;
+                }
+                .password-input {
+                    position: relative;
+                }
+            }
+    
+            .form-btn {
+                margin-top: 2rem;
+    
+                .btn-forget {
+                    font-family: 'Montserrat-SemiBold';
+                    font-size: 0.875rem;
+                    line-height: 18px;
+                    letter-spacing: -1%;
+                    color: $text-color-0;
+                }
+    
+                .btn-login {
+                    font-family: 'Montserrat-SemiBold';
+                    font-size: 0.875rem;
+                    line-height: 17.07px;
+                    letter-spacing: 1.25%;
+                    padding: 0.5rem 4rem;
+                    margin-top: 1rem;
+                    border: none;
+                    outline: none;
+                    color: $text-color-0;
+                    background: $bg-color-8;
+                    border-radius: 24px;
+                    transition: all 0.2s ease-out;
+    
+                    &:hover {
+                        color: $text-color-8;
+                        background: $bg-color-1;
+                        transition: all 0.2s ease;
+                    }
+                }
+            }
+    
+            .form-signup {
+                margin-top: 1rem;
+    
+                .signup-text {
+                    font-size: 0.875rem;
+                    font-family: 'Montserrat-Regular';
+                    line-height: 18px;
+                    color: $text-color-5;
+    
+                    span {
+                        margin-left: 0.5rem;
+    
+                        button {
+                            font-size: 1rem;
+                            font-family: 'Montserrat-SemiBold';
+                            line-height: 19.5px;
+                            letter-spacing: 1.25%;
+                            color: $text-color-8;
+                            border: none;
+                            background: transparent;
+                            padding: 0;
+                            border-bottom: 1px $border-color-8 solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .login-layout {
+
+        .login {
+    
+            .login-form {
+        
+                .form-btn {
+        
+                    .btn-login {
+                        margin: 0 0 0 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .login-layout {
+
+        .login {
+            // padding: 0 3rem;
+            // margin: 4rem 0 2rem;
+        
+            .login-form {
+        
+                h3 {
+                    font-size: 3.1875rem;
+                    margin-bottom: 6.5rem;
+                }
+        
+                .form-btn {
+                    margin-top: 3.5rem;
+        
+                    .btn-login {
+                        padding: 0.84375rem 5.875rem;
+                        margin: 0 0 0 2rem;
+                    }
+                }
+        
+                .form-signup {
+                    margin-top: 2.8125rem;
+        
+                    .signup-text {
+        
+                        span {
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .login-layout {
+
+        .login {
+            display: grid;
+            grid-template-columns: 50% 46%;
+            grid-gap: 2rem;
+            align-items: center;
+            // padding: 8.3125rem 3rem 6.875rem;
+            margin: 0;
+            height: 100vh;
+    
+            .login-card {
+                margin: 0;
+            }
+
+            .login-form {
+
+                .form-main {
+
+                    .username-input, .password-input {
+                        width: 460px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .login-layout {
+
+        .login {
+            grid-template-columns: 556px 500px;
+            grid-gap: 5rem;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .login-layout {
+
+        .login {
+            grid-template-columns: 556px 500px;
+            grid-gap: 116px;
+            // padding: 8.3125rem 209px 6.875rem 111px;
+            justify-content: center;
+
+            .login-form {
+
+                .form-btn {
+
+                    .btn-login {
+                        margin: 0 0 0 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

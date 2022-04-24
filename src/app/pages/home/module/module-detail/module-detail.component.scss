@@ -1,0 +1,397 @@
+.main_tracker .main_head .image_banner {
+    position: relative;
+  }
+  .main_tracker .main_head .image_banner img {
+    width: 100%;
+    height: 100%;
+  }
+  .main_tracker .main_head .banner_content {
+    position: absolute;
+    min-width: 87%;
+    top: 13rem;
+    padding: 0 5rem;
+  }
+  .main_tracker .main_head .banner_content #logo {
+    width: 40%;
+    margin-left: 9rem;
+  }
+  .main_tracker .main_head .banner_content #changecolor {
+    background: #ffffff80;
+  }
+  .main_tracker .main_head .banner_content .time_price {
+    display: flex;
+    margin-top: 150px;
+    background: #1a1a1abf;
+    padding: 14px 36px;
+  }
+  .main_tracker .main_head .banner_content .time_price .left {
+    position: relative;
+    top: 0.6rem;
+  }
+  .content_rule {
+    width: 100%;
+    padding: 96px 94px;
+    color: #fff;
+  }
+  .content_rule .on_content {
+    display: flex;
+  }
+  .content_rule .on_content .on_left {
+    width: 45%;
+  }
+  .content_rule .on_content .on_left #color_change {
+    color: black;
+  }
+  .content_rule .on_content .on_left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+  }
+  .content_rule .on_content .on_left p {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    color: #9f9f9f;
+  }
+  .content_rule .on_content .on_image {
+    width: 45%;
+  }
+  .content_rule .on_content .on_image img {
+    width: 100%;
+    margin-left: 10%;
+  }
+  .content_rule .down_content {
+    display: flex;
+    margin-top: 96px;
+  }
+  .content_rule .down_content .down_left {
+    width: 45%;
+  }
+  .content_rule .down_content .down_left img {
+    width: 100%;
+  }
+  .content_rule .down_content .down_right {
+    width: 45%;
+    margin-left: 10%;
+  }
+  .content_rule .down_content .down_right .note {
+    margin-top: 3rem;
+  }
+  .content_rule .down_content .down_right .note .change_feature {
+    color: black;
+  }
+  .content_rule .down_content .down_right .note h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .content_rule .down_content .down_right .note p {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    color: #9f9f9f;
+  }
+  .main_head .banner_content .time_price .left .take_add {
+    border: none;
+    background: transparent;
+    display: flex;
+    color: #fff;
+  }
+  .main_head .banner_content .time_price .left .take_add #addArrow {
+    position: relative;
+    top: -0.4rem;
+  }
+  .main_head .banner_content .time_price .left .take_add #add {
+    color: black;
+  }
+  .main_head .banner_content .time_price .left .take_add span {
+    position: relative;
+    top: -0.5rem;
+    margin-right: 1rem;
+  }
+  .main_tracker .main_head .banner_content #changecolor {
+    background: #ffffff80;
+  }
+  .main_tracker .main_head .banner_content .time_price {
+    // display: flex;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+  
+    margin-top: 150px;
+    background: #1a1a1abf;
+    padding: 14px 36px;
+    border-radius: 16px;
+  }
+  .content_rule .on_content .on_image {
+    width: 45%;
+  }
+  .content_rule .on_content .on_image img {
+    width: 100%;
+    margin-left: 10%;
+    border-radius: 25px;
+  }
+  .content_rule .down_content .down_left {
+    width: 45%;
+  }
+  .content_rule .down_content .down_left img {
+    width: 100%;
+    border-radius: 25px;
+  }
+  .bill {
+    display: flex;
+  }
+  .bill p {
+    font-weight: bold;
+  }
+  .bill img {
+    width: 20px;
+    height: 20px;
+  }
+  .bill #count {
+    font-size: 1rem;
+    margin-left: 0.6rem;
+  }
+  .bill #money {
+    font-size: 1.4rem;
+    margin-left: 1.5rem;
+  }
+  .addcart {
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px 8px 24px;
+    display: flex;
+    background: #1a1a1a;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+  }
+  .addcart img {
+    margin-left: 1.1rem;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .content_rule .on_content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .content_rule .on_content .on_image {
+      width: 100%;
+      position: relative;
+      right: 4rem;
+    }
+    .content_rule .on_content .on_left {
+      width: 100%;
+    }
+    .content_rule .down_content {
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
+    .content_rule .down_content .down_left {
+      width: 100%;
+    }
+    .content_rule .down_content .down_right {
+      width: 100%;
+      margin-left: 0;
+    }
+    .content_rule img {
+      margin-top: 2rem;
+    }
+    .content_rule .down_content .down_left img {
+      height: 50%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .content_rule .on_content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .content_rule .on_content .on_image {
+      width: 100%;
+      position: relative;
+      right: 4rem;
+    }
+    .content_rule .on_content .on_left {
+      width: 100%;
+    }
+    .content_rule .down_content {
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
+    .content_rule .down_content .down_left {
+      width: 100%;
+    }
+    .content_rule .down_content .down_right {
+      width: 100%;
+      margin-left: 0;
+    }
+    .content_rule img {
+      margin-top: 2rem;
+    }
+    .content_rule .down_content .down_left img {
+      height: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px){
+    .content_rule .down_content .down_right {
+      margin-bottom: 10rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .main_tracker .main_head .banner_content #changecolor {
+      background: transparent;
+      position: relative;
+      top: 12rem;
+    }
+    .light_toggle {
+      display: none;
+      position: relative;
+      
+    }
+    .down_header {
+        width: 100%;
+    }
+    .down_header .title_white span {
+        color: #fff;
+        position: relative;
+        left: 30%;
+        bottom: 2rem;
+    }
+    .down_header .title_white img {
+        position: relative;
+        bottom: 1.5rem;
+    }
+    .main_tracker .main_head .banner_content {
+        padding: 0;
+    }
+  
+    .main_tracker .main_head .banner_content #logo {
+        display: none;
+    }
+    .main_head .banner_content .time_price .right {
+        display: none;
+    }
+    .main_head .banner_content .time_price {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: transparent;
+        width: 100%;
+        position: relative;
+        top: 2rem;
+    }
+    .main_head .banner_content .time_price .left{
+        width: 100%;
+        margin-top: -11rem;
+    }
+    .content_rule {
+        margin-top: 22rem;
+        width: 100%;
+        padding: 0;
+    }
+    .content_rule .on_content {
+      margin-top: -5rem;
+    }
+    .content_rule .down_content .down_left {
+        position: relative;
+        top: -5rem;
+    }
+    .content_rule .down_content .down_right {
+        width: 100%;
+        position: relative;
+        top: -2rem; 
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 10rem;
+    }
+    .content_rule .on_content .on_left {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+  }
+  @media screen and (min-width: 768px){
+    .main_head .banner_content .time_price .left{
+      margin-top: 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .content_rule .on_content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .content_rule .on_content .on_image {
+      width: 90%;
+      position: relative;
+      left: -1rem;
+    }
+    .content_rule .on_content .on_left {
+      width: 100%;
+    }
+    .content_rule .down_content {
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
+    .content_rule .down_content .down_left {
+      width: 100%;
+    }
+    .content_rule .down_content .down_right {
+      width: 100%;
+      margin-left: 0;
+    }
+    .content_rule img {
+      margin-top: 2rem;
+    }
+    .content_rule .down_content .down_left img {
+      height: 50%;
+      width: 90%;
+      margin-left: 1.2rem;
+    }
+    .main_tracker .main_head .banner_content #changecolor {
+      display: flex;
+    }
+    
+  }
+  
+  
+  @media only screen and (min-width: 540px) {
+    .content_rule .on_content .on_left .color_descript {
+      line-height: 3rem;
+    }
+    #down_image #image_module{
+      height: 50%;
+      width: 90%;
+      margin-top: -3rem;
+      position: relative;
+      left: 1.5rem;
+    }
+    #module_image #detail_image{
+      width: 95%;
+      margin-left: 4.9rem;
+    }
+    .main_head .banner_content .time_price .left {
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 280px){
+    .content_rule {
+        position: relative;
+        top: 0;
+    }
+    .main_head .banner_content .time_price .left {
+      margin-top: -15rem;
+    }
+    .content_rule .on_content .on_left #color_change {
+      line-height: 3rem;
+    }
+    .content_rule .down_content .down_left img {
+      height: 50%;
+      width: 90%;
+      margin-top: -3rem;
+      position: relative;
+      right: 0.3rem;
+    }
+    .content_rule .on_content .on_image img{
+      width: 95%;
+      position: relative;
+      left: 0.8rem;
+    }
+  }

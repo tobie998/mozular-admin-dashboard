@@ -1,0 +1,104 @@
+<div class="register">
+  <header class="header" >
+    <span (click)="back()" style="cursor: pointer;">
+      <img src="{{globals.urlFolder}}svg/arrow-left.svg" alt="">
+      <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M18.3704 23.3887C19.1493 22.6055 19.1532 21.3318 18.3743 20.5486L9.87232 11.9998L18.3743 3.45094C19.1532 2.66775 19.1493 1.39403 18.3704 0.610839C17.5915 -0.172353 16.3248 -0.176267 15.5459 0.606925L5.62968 10.5778L5.62578 10.5817C5.23683 10.9728 5.04308 11.4862 5.04355 11.9998C5.04308 12.5134 5.23683 13.0268 5.62578 13.4179L5.62748 13.4196C5.62821 13.4203 5.62894 13.4211 5.62967 13.4218C5.63041 13.4225 5.63114 13.4233 5.63187 13.424L15.5459 23.3927C16.3248 24.1758 17.5915 24.1719 18.3704 23.3887Z"
+          fill="white" />
+      </svg> -->
+      <h6>Create your account</h6>
+    </span>
+    
+  </header>
+
+  <div class="main-register">
+    <!-- <label class="register-avatar" for="file">
+      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M23.0625 15.5483C23.5803 15.5483 24 15.1286 24 14.6108V8.51709C24 6.44934 22.3177 4.76709 20.25 4.76709H18.8268C18.4253 4.76709 18.0687 4.51176 17.9393 4.13165L17.6557 3.29836C17.2675 2.15817 16.1976 1.39209 14.9932 1.39209H9.00389C7.82283 1.39209 6.75975 2.13848 6.35864 3.24932L6.03412 4.14801C5.90039 4.51828 5.54606 4.76709 5.15236 4.76709H3.75C1.68225 4.76709 0 6.44934 0 8.51709V19.2983C0 21.3661 1.68225 23.0483 3.75 23.0483H20.25C22.3177 23.0483 24 21.3661 24 19.2983C24 18.7806 23.5803 18.3608 23.0625 18.3608C22.5447 18.3608 22.125 18.7806 22.125 19.2983C22.125 20.3322 21.2839 21.1733 20.25 21.1733H3.75C2.71613 21.1733 1.875 20.3322 1.875 19.2983V8.51709C1.875 7.48321 2.71613 6.64209 3.75 6.64209H5.15236C6.33342 6.64209 7.3965 5.8957 7.79761 4.78486L8.12213 3.88617C8.25586 3.5159 8.61019 3.26709 9.00389 3.26709H14.9932C15.3946 3.26709 15.7513 3.52246 15.8807 3.90253L16.1643 4.73582C16.5524 5.87601 17.6224 6.64209 18.8268 6.64209H20.25C21.2839 6.64209 22.125 7.48321 22.125 8.51709V14.6108C22.125 15.1286 22.5447 15.5483 23.0625 15.5483Z"
+          fill="white" />
+        <path
+          d="M12.0469 7.57959C8.81602 7.57959 6.1875 10.2081 6.1875 13.439C6.1875 16.6698 8.81602 19.2983 12.0469 19.2983C15.2777 19.2983 17.9062 16.6698 17.9062 13.439C17.9062 10.2081 15.2777 7.57959 12.0469 7.57959ZM12.0469 17.4233C9.84989 17.4233 8.0625 15.6359 8.0625 13.439C8.0625 11.242 9.84989 9.45459 12.0469 9.45459C14.2439 9.45459 16.0312 11.242 16.0312 13.439C16.0312 15.6359 14.2439 17.4233 12.0469 17.4233Z"
+          fill="white" />
+      </svg>
+      <p>Upload image</p>
+    </label>
+    <input type="file" id="file" name="file" multiple hidden> -->
+
+    <form class="register-form" [formGroup]="loginForm">
+      <div class="form-left">
+        <div class="main-input username-input">
+          <label>Organization’s name</label>
+          <input type="text" placeholder="Your Username" formControlName="Username">
+          <div class="delete-btn" [ngClass]="{'delete-btn-active': loginForm.get('Username').value.length !== 0}" (click)="loginForm.controls['Username'].setValue('')">
+            <img src="{{globals.urlFolder}}png/Delete-dark-theme.png" alt="Delete-dark-theme">
+          </div>
+        </div>
+
+        <div class="main-input email-input">
+          <label>Email</label>
+          <input type="text" placeholder="Your email" formControlName="Email" >
+          <div class="delete-btn"  [ngClass]="{'delete-btn-active': loginForm.get('Email').value.length !== 0}" (click)="loginForm.controls['Email'].setValue('')">
+            <img src="{{globals.urlFolder}}png/Delete-dark-theme.png" alt="Delete-dark-theme">
+          </div>
+        </div>
+
+        <div class="main-input firstname-input">
+          <label>First name</label>
+          <input type="text" placeholder="Your first name " formControlName="FirstName">
+          <div class="delete-btn" [ngClass]="{'delete-btn-active': loginForm.get('FirstName').value.length !== 0}" (click)="loginForm.controls['FirstName'].setValue('')">
+            <img src="{{globals.urlFolder}}png/Delete-dark-theme.png" alt="Delete-dark-theme">
+          </div>
+        </div>
+
+        <div class="main-input lastname-input">
+          <label>Last name</label>
+          <input type="text" placeholder="Your last name" formControlName="LastName" >
+          <div class="delete-btn" [ngClass]="{'delete-btn-active': loginForm.get('LastName').value.length !== 0}" (click)="loginForm.controls['LastName'].setValue('')">
+            <img src="{{globals.urlFolder}}png/Delete-dark-theme.png" alt="Delete-dark-theme">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-right">
+        <div class="main-input phone-input">
+          <label>Phone</label>
+          <input type="text" placeholder="Your phone number" formControlName="Phone" >
+          <div class="delete-btn" [ngClass]="{'delete-btn-active': loginForm.get('Phone').value.length !== 0}" (click)="loginForm.controls['Phone'].setValue('')">
+            <img src="{{globals.urlFolder}}png/Delete-dark-theme.png" alt="Delete-dark-theme">
+          </div>
+        </div>
+
+        <div class="main-input birth-input">
+          <label>D.O.B</label>
+          <input type="text" placeholder="Your date of birth" formControlName="DOB" [ngClass]="{'delete-btn-active': loginForm.get('DOB').value.length !== 0}">
+          <div class="delete-btn" [ngClass]="{'delete-btn-active': loginForm.get('DOB').value.length !== 0}" (click)="loginForm.controls['DOB'].setValue('')">
+            <img src="{{globals.urlFolder}}png/Delete-dark-theme.png" alt="Delete-dark-theme">
+          </div>
+        </div>
+
+        <div class="main-input password-input">
+          <label>Password</label>
+          <input type="password" placeholder="Set your password" formControlName="Password" [ngClass]="{'delete-btn-active': loginForm.get('Password').value.length !== 0}">
+          <div class="delete-btn" [ngClass]="{'delete-btn-active': loginForm.get('Password').value.length !== 0}" (click)="loginForm.controls['Password'].setValue('')">
+            <img src="{{globals.urlFolder}}png/Delete-dark-theme.png" alt="Delete-dark-theme">
+          </div>
+        </div>
+
+        <div class="main-input cf-pw-input">
+          <label>Confirm password</label>
+          <input type="password" placeholder="Confirm your password" formControlName="ConfirmPassword" >
+          <div class="delete-btn" [ngClass]="{'delete-btn-active': loginForm.get('ConfirmPassword').value.length !== 0}" (click)="loginForm.controls['ConfirmPassword'].setValue('')">
+            <img src="{{globals.urlFolder}}png/Delete-dark-theme.png" alt="Delete-dark-theme">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="register-btn">
+      <button class="btn" (click)="signUp()">Next</button>
+      <!-- <a href="#" class="btn">Next</a> -->
+    </div>
+  </div>
+</div>

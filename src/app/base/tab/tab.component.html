@@ -1,0 +1,25 @@
+<!-- <mat-tab-group class="mat-tab-group">
+  <div class="row">
+    <mat-tab *ngFor="let item of data" [label]="item.label">
+      >
+      <ng-template matTabContent>
+        <ng-container *ngIf="item.type == 'table'">
+          <app-table
+            [data]="item.data"
+            [config]="item.config"
+            (callback)="callbackFromTable($event)"
+            (addResult)="onClickAddResult($event)"
+          ></app-table>
+        </ng-container>
+        <ng-container *ngIf="item.type == 'list'">
+          <app-list
+            [data]="item.data"
+            [config]="item.config"
+            (callback)="callbackFromList($event)"
+          >
+          </app-list>
+        </ng-container>
+      </ng-template>
+    </mat-tab>
+  </div>
+</mat-tab-group> -->

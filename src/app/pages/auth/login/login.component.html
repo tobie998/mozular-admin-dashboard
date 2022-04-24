@@ -1,0 +1,69 @@
+<div class="login-layout">
+    <div class="login">
+        <div class="login-card">
+            <img src="{{globals.urlFolder}}png/login-background.png" alt="">
+            
+            <!-- <object *ngIf="url" type="image/svg+xml" data="{{url}}"> </object> -->
+            <!-- <iframe [src]="url" width="400px" height="400px"></iframe> -->
+            <!-- <svg>
+                <use xlink:href="#bike" />
+              </svg> -->
+                           
+        </div>
+    
+        <div class="login-form">
+            <h3>{{ "LOG_IN_INFO_001" | translate }}</h3>
+            
+            <form class="form-main" [formGroup]="loginForm">
+                <div class="main-input username-input">
+                    <label>{{ "LOG_IN_INFO_002" | translate }}</label>
+                    <input type="text" [placeholder]=" 'LOG_IN_INFO_003' | translate" formControlName="Username" 
+                            [ngClass]="{'isValid': submitted && loginForm.controls.Username.errors}">
+                    <div style="background-image: url('{{globals.urlFolder}}png/Delete.png');" *ngIf="loginForm.get('Username')?.value && loginForm.get('Username')?.value?.length !== 0" (click)="loginForm.controls['Username'].setValue('')"  class="delete-icon"></div>
+                    <div *ngIf="submitted && loginForm.controls.Username.errors" class="invalid-feedback">
+                        <div *ngIf="loginForm.controls.Username.errors.required">{{ "LOG_IN_INFO_010" | translate }}</div>
+                        <div *ngIf="loginForm.controls.Username.errors.email">{{ "LOG_IN_INFO_011" | translate }}</div>
+                    </div>
+                </div>
+    
+                <div class="main-input password-input">
+                    <label>Password</label>
+                    <input [type]="typePass" formControlName="Password" [placeholder]="'LOG_IN_INFO_005' | translate" >
+                    <!-- <div style="background-image: url('{{globals.urlFolder}}png/Delete.png');" *ngIf="model.pwd.length !== 0" (click)="model.pwd =''" class="delete-icon"></div> -->
+                    <button
+                        class="show-hide"
+                        *ngIf="typePass == 'password'"
+                        (click)="typePass = 'text'"
+                    >
+                        <span class="material-icons"> visibility </span>
+                    </button>
+                    <button
+                        class="show-hide"
+                        *ngIf="typePass !== 'password'"
+                        (click)="typePass = 'password'"
+                    >
+                        <span class="material-icons"> visibility_off </span>
+                    </button>
+                    <div *ngIf="submitted && loginForm.controls.Password.errors" class="invalid-feedback">
+                        <div *ngIf="loginForm.controls.Password.errors.required">{{ "LOG_IN_INFO_012" | translate }}</div>
+                        <!-- <div *ngIf="loginForm.controls.Password.errors.email">{{ "LOG_IN_INFO_013" | translate }}</div> -->
+                    </div>
+                </div>
+            </form>
+    
+            <div class="form-btn">
+                <!-- <a class="btn-forget" [routerLink]="'/forgot-password'"> Forgot your password?</a> -->
+                <button class="btn-login" (click)="login()">Log in</button>
+            </div>
+            
+            <!-- <div class="form-signup">
+                <p class="signup-text">
+                    You haven’t had an account?
+                    <span><button (click)="signUp()">Sign up here</button></span>
+                </p>
+            </div> -->
+    
+    
+        </div>
+    </div>
+</div>

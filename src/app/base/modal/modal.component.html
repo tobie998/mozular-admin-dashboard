@@ -1,0 +1,60 @@
+<div class="modal-component" *ngIf="config">
+  <div class="title">
+    {{ config.title }}
+  </div>
+  <div class="row" *ngFor="let item of config.config">
+    <div class="col-2 label">
+      {{ item.label }}
+    </div>
+    <div class="col-10" *ngIf="dataModal">
+      <div *ngIf="item.condition != 'file'" class="detail">
+        {{ dataModal[item.condition] }}
+      </div>
+      <div *ngIf="item.condition == 'file'">
+        <div class="button">
+          <div class="add-img">
+            <label for="listImage">
+              <img src="assets/svg/add-img-icon.svg" alt="" />
+              Add image(s)
+            </label>
+            <input
+              type="file"
+              accept="image/*"
+              id="listImage"
+              (change)="onSelectFile($event)"
+              multiple
+              hidden
+              required
+            />
+          </div>
+          <div class="take-photo">
+            <label>
+              <img src="assets/svg/take-photo-icon.svg" alt="" />
+              Take a picture
+            </label>
+          </div>
+        </div>
+        <swiper
+          [slidesPerView]="3"
+          [spaceBetween]="0"
+          (swiper)="onSwiper($event)"
+          (slideChange)="onSlideChange()"
+          [navigation]="true"
+        >
+          <ng-template swiperSlide *ngFor="let item of images; let i = index">
+            <img
+              src="assets/svg/close-icon.svg"
+              alt=""
+              class="close-img"
+              (click)="removeImage(i)"
+            />
+            <img [src]="item" alt="" class="image-item" />
+          </ng-template>
+        </swiper>
+      </div>
+    </div>
+  </div>
+  <div class="save">
+    <app-button [buttonType]="{ cancel: true, save: true }" [position]="'center'" (callback)="handleEventDetail($event)"></app-button>
+  </div>
+</div>

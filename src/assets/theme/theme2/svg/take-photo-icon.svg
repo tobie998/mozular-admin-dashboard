@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16">
+  <g id="photo-camera_1_" data-name="photo-camera (1)" transform="translate(0 -41)">
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="3" cy="3" r="3" transform="translate(7 48)" fill="#fff"/>
+    <path id="Path_2791" data-name="Path 2791" d="M146.632,43V42a1.116,1.116,0,0,0-1-1h-7a1.116,1.116,0,0,0-1,1v1Z" transform="translate(-132.631)" fill="#fff"/>
+    <path id="Path_2792" data-name="Path 2792" d="M17,121.006H2a2.291,2.291,0,0,0-2,2v9a2.291,2.291,0,0,0,2,2H17a2.291,2.291,0,0,0,2-2v-9A2.291,2.291,0,0,0,17,121.006Zm-12,3H3c-.307,0-1,.308-1,0a1.614,1.614,0,0,1,1-1H5c.307,0,0,.692,0,1S5.307,124.006,5,124.006Zm5,8c-2.271,0-5-2.726-5-5s2.729-4,5-4a3.921,3.921,0,0,1,4,4C14,129.28,12.271,132.006,10,132.006Z" transform="translate(0 -77.005)" fill="#fff"/>
+  </g>
+</svg>

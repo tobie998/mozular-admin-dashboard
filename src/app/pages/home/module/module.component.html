@@ -1,0 +1,15 @@
+<main>
+    <div class="list-tab">
+        <ul>
+            <li (click)="changeModule(false)" [ngClass]="{'active': isActive === false}"><a>Module đang hoạt động</a></li>
+            <li (click)="changeModule(true)" [ngClass]="{'active': isActive === true}"><a >Module hết hạn</a></li>
+        </ul>
+        <img src="{{globals.urlFolder}}png/card.png" *ngIf="isList === false" (click)="isList = true" class="img-list">
+        <img src="{{globals.urlFolder}}png/list.png" *ngIf="isList === true"  (click)="isList = false" class="img-list">
+    </div>
+    <app-active-module [dataInput]="listActive" *ngIf="isActive === false && isList === false"></app-active-module>
+    <app-active-module [dataInput]="listExpired" *ngIf="isActive === true && isList === false"></app-active-module>
+    <app-expired-module [dataInput]="listActive" *ngIf="isActive === false && isList === true"></app-expired-module>
+    <app-expired-module [dataInput]="listExpired" *ngIf="isActive === true && isList === true"></app-expired-module>
+    <!-- <app-expired-module [dataInput]="listActive" *ngIf="isActive === true"></app-expired-module> -->
+</main>

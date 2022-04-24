@@ -1,0 +1,216 @@
+@import "./variables.scss";
+.register {
+    background: $bg-color-0;
+    font-family: 'Montserrat';
+    padding: 0 1rem;
+    
+
+    .header {
+        padding: 2rem 0 0 0rem;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 36px;
+            height: 24px;
+            margin-right: 1.5rem;
+        }
+
+        h6 {
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 0.0015rem;
+            color: $text-color-6;
+            margin: 0;
+        }   
+    }
+
+    .main-register {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+
+        .register-avatar {
+            // background: url(../images/dashed-border.png) no-repeat;
+            background-size: contain;
+            width: 14.625rem;
+            height: 14.625rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 2.3575rem auto 2.25rem;
+            cursor: pointer;
+            border: 2px dashed #9F9F9F;
+            box-sizing: border-box;
+            border-radius: 16px ;
+            p {
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 18px;
+                letter-spacing: 0.01rem;
+                color: $text-color-6;
+                margin-top: 0.5rem;
+            }
+        }
+
+        .register-form {
+            margin-bottom: 3.9rem;
+
+            .form-left,
+            .form-right {
+
+                .main-input {
+                    position: relative;
+
+                    label {
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        line-height: 18px;
+                        letter-spacing: 0.01rem;
+                        color: $text-color-5;
+                    }
+
+                    input[type="text"],
+                    input[type="date"],
+                    input[type="password"] {
+                        width: 100%;
+                        display: block;
+                        background: inherit;
+                        color: $text-color-6;
+                        font-weight: 500;
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px solid $border-color-5;
+                        font-size: 1rem;
+                        line-height: 24px;
+                        letter-spacing: 0.005rem;
+                        padding: 0.75rem 0;
+                    }
+
+                    ::placeholder {
+                        font-size: 1rem;
+                        font-weight: 500;
+                        line-height: 24px;
+                        color: $text-color-5;
+                    }
+
+                    input:focus {
+                        border-bottom: 1px solid $border-color-7;
+                    }
+
+                    input:focus::-webkit-input-placeholder {
+                        color: $text-color-5;
+                        font-weight: 500;
+                    }
+
+                    .delete-btn {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        display: none;
+
+                        img {
+                            width: 1.5rem;
+                            height: 1.25rem;
+                            margin-bottom: 0.75rem;
+                        }
+                    }
+
+                    .delete-btn-active {
+                        display: block;
+                    }
+                }
+
+                .main-input:not(:last-child) {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+
+        .register-btn {
+            text-align: right;
+
+            .btn {
+                padding: 0.875rem 6.0625rem;
+                background: $bg-color-7;
+                color: $text-color-0;
+                border-radius: 38px;
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: 19.5px;
+                border: none;
+                outline: none;
+
+                &:hover {
+                    background: $bg-color-0;
+                    color: $text-color-6;
+                    box-shadow: 0 0 0 1px $border-color-5 inset;
+                }
+
+                &:focus {
+                    outline: none;
+                    box-shadow: 0 0 0 1px $border-color-7 inset;
+                }
+            }
+        }
+    }
+}
+// @media screen and (max-width: 1920px) and (min-width: 768px) {
+//     .register {
+//         padding: 0 6.125rem;
+//         height: 1080px;
+        
+    
+//         .header {
+//             // padding-top: 8.5rem;
+    
+//             svg {
+//                 width: 2.25rem;
+//                 height: 1.5rem;
+//             }
+//         }
+//     }
+    
+// }
+@media screen and (min-width: 768px) {
+    .register {
+        padding: 0 6.125rem;
+        height: 1080px;
+        
+    
+        .header {
+            // padding-top: 8.5rem;
+    
+            svg {
+                width: 2.25rem;
+                height: 1.5rem;
+            }
+        }
+    
+        .main-register {
+            padding-bottom: 10.4375rem;
+            padding-top: 10.4375rem;
+    
+            .register-form {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 2rem;
+                margin-bottom: 2.25rem;
+            }   
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .register {
+        padding: 0 12.5rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .register {
+        padding: 0 27.5rem;
+    }
+}

@@ -1,0 +1,41 @@
+.group-btn {
+    button {
+        margin-left: 30px;
+    }
+    .small {
+        width: 36px;
+        height: 36px;
+    }
+    img {
+        margin-left: 10px;
+        height: 50px;
+
+    }
+    // position: absolute;
+    // right: 35px;
+    // bottom: 50px;
+    text-align: right;
+    padding-right: 10px;
+}
+.ci-button-save {
+  min-width: 120px;
+  min-height: 50px;
+  border-radius: 20px;
+}
+.ci-button-default {
+  margin-left: 0px !important;
+  // min-width: 120px;
+  // min-height: 50px;
+  // border-radius: 20px;
+}
+@media only screen and (max-width: 1650px){
+  .group-btn {
+    button {
+        margin-left: 30px;
+    }
+    .small {
+        width: 30px;
+        height: 30px;
+    }
+  }
+}

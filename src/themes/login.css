@@ -1,0 +1,247 @@
+/*  White color */
+/* Black color */
+/* Primary color */
+/* Gradient */
+/* Alert color*/
+/*  White color */
+/* Black color */
+/* Text color */
+/* Primary color */
+/* Gradient */
+/* Alert color*/
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(./../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(./../fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(./../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(./../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(./../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(./../fonts/Nunito-Regular.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.member-deactive {
+  color: #FF3E33 !important;
+}
+
+.member-active {
+  color: #21AB36 !important;
+}
+
+.login {
+  padding: 0 1rem;
+  margin: 2rem 0;
+}
+.login .login-card {
+  margin-bottom: 2rem;
+}
+.login .login-card img {
+  width: 100%;
+  height: 100%;
+}
+.login .login-form {
+  font-family: "Montserrat";
+}
+.login .login-form h3 {
+  font-size: 1.59375rem;
+  font-weight: 600;
+  line-height: 31px;
+  color: #1A1A1A;
+  margin-bottom: 1.5rem;
+}
+.login .login-form .form-main .main-input label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -1%;
+  color: #9F9F9F;
+}
+.login .login-form .form-main .main-input input[type=text],
+.login .login-form .form-main .main-input input[type=password] {
+  width: 100%;
+  display: block;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #616161;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  background: inherit;
+}
+.login .login-form .form-main .main-input ::-moz-placeholder {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.login .login-form .form-main .main-input :-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.login .login-form .form-main .main-input ::placeholder {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.login .login-form .form-main .main-input input:focus {
+  border-bottom: 2px solid #1A1A1A;
+  background-size: 24px;
+}
+.login .login-form .form-main .main-input input:focus::-webkit-input-placeholder {
+  color: #1F1F1F;
+  font-weight: 500;
+}
+.login .login-form .form-main .main-input input[type=password] {
+  font-size: 1.5rem;
+  font-family: monospace;
+  height: 48px;
+  padding: 0.75rem 0;
+}
+.login .login-form .form-main .username-input {
+  margin-bottom: 1.375rem;
+  position: relative;
+}
+.login .login-form .form-main .password-input {
+  position: relative;
+}
+.login .login-form .form-btn {
+  margin-top: 2rem;
+}
+.login .login-form .form-btn .btn-forget {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -1%;
+  color: #1A1A1A;
+}
+.login .login-form .form-btn .btn-login {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 17.07px;
+  letter-spacing: 1.25%;
+  padding: 0.5rem 4rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  color: #1A1A1A;
+  background: #DAB758;
+  border-radius: 24px;
+  transition: all 0.2s ease-out;
+}
+.login .login-form .form-btn .btn-login:hover {
+  color: #DAB758;
+  background: #1A1A1A;
+  transition: all 0.2s ease;
+}
+.login .login-form .form-signup {
+  margin-top: 1rem;
+}
+.login .login-form .form-signup .signup-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 18px;
+  color: #9F9F9F;
+}
+.login .login-form .form-signup .signup-text span {
+  margin-left: 0.5rem;
+}
+.login .login-form .form-signup .signup-text span button {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19.5px;
+  letter-spacing: 1.25%;
+  color: #DAB758;
+  border: none;
+  background: transparent;
+  padding: 0;
+  border-bottom: 1px #DAB758 solid;
+}
+
+@media screen and (min-width: 425px) {
+  .login .login-form .form-btn .btn-login {
+    margin: 0 0 0 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .login {
+    padding: 0 3rem;
+    margin: 4rem 0 2rem;
+  }
+  .login .login-form h3 {
+    font-size: 3.1875rem;
+    margin-bottom: 3.25rem;
+  }
+  .login .login-form .form-btn {
+    margin-top: 3.5rem;
+  }
+  .login .login-form .form-btn .btn-login {
+    padding: 0.84375rem 5.875rem;
+    margin: 0 0 0 6.375rem;
+  }
+  .login .login-form .form-signup {
+    margin-top: 2.8125rem;
+  }
+  .login .login-form .form-signup .signup-text span {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .login {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-gap: 2rem;
+    align-items: center;
+    padding: 8.3125rem 3rem 6.875rem;
+    margin: 0;
+    height: 100vh;
+  }
+  .login .login-card {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .login {
+    grid-template-columns: 55% 38%;
+    grid-gap: 5rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .login {
+    grid-template-columns: 929.5px 500px;
+    grid-gap: 10.65625rem;
+    padding: 8.3125rem 209px 6.875rem 111px;
+  }
+  .login .login-form .form-btn .btn-login {
+    margin: 0 0 0 6.3rem;
+  }
+}/*# sourceMappingURL=login.css.map */

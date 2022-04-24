@@ -1,0 +1,23 @@
+
+.create-member {
+    margin-top: 45px;
+    height: 60vh;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #e2e2e2;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #a1a1a1;
+  }
+.active {
+    min-width: 150px;
+}
+.submit-create{
+    button{
+        min-width: 264px;
+    }
+}

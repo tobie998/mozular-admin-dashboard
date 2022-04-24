@@ -1,0 +1,64 @@
+<div class="list-member">
+    <table class="table-mozular">
+        <thead>
+            <tr>
+                <td>{{ "LIST_PAYMENT_INFO_001" | translate }}</td>
+                <td>{{ "LIST_PAYMENT_INFO_002" | translate }}</td>
+                <!-- <td>Dịch vụ sử dụng</td> -->
+                <td>{{ "LIST_PAYMENT_INFO_003" | translate }}</td>
+                <td class="text-cen">{{ "LIST_PAYMENT_INFO_004" | translate }}</td>
+                <td>{{ "LIST_PAYMENT_INFO_005" | translate }}</td>
+                <td style="min-width: 140px;">{{ "LIST_PAYMENT_INFO_006" | translate }}</td>
+                <!-- <td>Hoạt động</td> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of dataInput">
+                <td>{{data.invoice_number}}</td>
+                <td>{{data.user?.show_name}}</td>
+                <!-- <td>Công lương</td> -->
+                <td>{{data.subtotal}}</td>
+                <td class="text-cen">{{data.created_date | date :'dd/MM/yyyy'}}</td>
+                <ng-container *ngIf="data.active !== true">
+                    <td class="member-deactive">{{ "LIST_PAYMENT_INFO_007" | translate }}</td>
+                    <td ><button class="btn-active" (click)="active(data)">{{ "LIST_PAYMENT_INFO_006" | translate }}</button></td>
+                </ng-container>
+                <ng-container *ngIf="data.active === true">
+                    <td>{{ "LIST_PAYMENT_INFO_008" | translate }}</td>
+                    <td><span class="btn-sample" style="min-width: 140px;">{{ "LIST_PAYMENT_INFO_009" | translate }}</span></td>
+                </ng-container>
+
+                
+                <!-- <td><img src="{{globals.urlFolder}}png/More1.png" alt=""></td> -->
+                <!-- <td>{{data.user_id}}</td>
+                <td>{{data.user_id}}</td>
+                <td>15.000.000 Đ</td>
+                <td>2.000.000 Đ</td>
+                <td>Thẻ tín dụng</td>
+                <td>20/10/2021</td>
+                <td>20/10/2021</td>
+                <td class="member-deactive">Chưa thanh toán</td>
+                <td><img src="{{globals.urlFolder}}png/More1.png" alt=""></td> -->
+            </tr>
+            <!-- <tr>
+                <td>4523658</td>
+                <td>Trần Quang Anh</td>
+                <td>15.000.000 Đ</td>
+                <td>2.000.000 Đ</td>
+                <td>Thẻ tín dụng</td>
+                <td>20/10/2021</td>
+                <td>20/10/2021</td>
+                <td>Đã thanh toán</td>
+                <td>
+                    <img src="{{globals.urlFolder}}png/More1.png" alt="">
+                    <ul class="list-edit">
+                        <li><img src="{{globals.urlFolder}}png/Edit.png" alt="">Sửa thông tin</li>
+                        <li><img src="{{globals.urlFolder}}png/Update.png" alt="">Cập nhật</li>
+                        <li><img src="{{globals.urlFolder}}png/Delete1.png" alt="">Xóa</li>
+                    </ul>
+                </td>
+            </tr> -->
+            
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,48 @@
+<div class="list-btn-payment-search" *ngIf="status === true">
+    <ul>
+        <li>
+            <div class="list-categories">
+                <label>ID hóa đơn <img src="{{globals.urlFolder}}png/Drop up.png" alt=""></label>
+                <!-- <ul>
+                    <li><span class="dots active"></span>ID đơn hàng</li>
+                    <li><span class="dots"></span>Tên khách hàng</li>
+                    <li><span class="dots"></span>Email</li>
+                    <li><span class="dots"></span>Số điện thoại</li>
+                </ul> -->
+            </div>
+            <input type="text" name="" id="" placeholder="Nhập nội dung ..." class="search">
+        </li>
+        <li>
+            <input type="date" name="" id="">
+        </li>
+        <li>
+            <input type="text" name="" id="" placeholder="Cảnh báo hết hạn"> <img src="{{globals.urlFolder}}png/Drop up.png"
+                alt="" class="arrow">
+        </li>
+        <li>
+            <input type="text" name="" id="" placeholder="Trạng thái"> <img src="{{globals.urlFolder}}png/Drop up.png" alt=""
+                class="arrow">
+        </li>
+        <li>
+            <button><img src="{{globals.urlFolder}}png/Search.png" alt="">Tìm kiếm</button>
+        </li>
+        <li>
+            <img src="{{globals.urlFolder}}png/Group 1061.png" alt="" (click)="changeStatus()">
+        </li>
+    </ul>
+</div>
+<div class="list-btn-payment" *ngIf="status === false">
+    <div class="input-search">
+        <img src="{{globals.urlFolder}}png/Search1.png" alt="">
+        <input type="search" name="" id="" [(ngModel)]="textSearch" (ngModelChange)="search()" placeholder="Tìm kiếm...">
+    </div>
+    <!-- <ul>
+        <li>
+            <button class="btn-create-order"><img src="{{globals.urlFolder}}png/Group 8.png">Thêm đơn hàng</button>
+        </li>
+        <li>
+            <button class="update-status"><img src="{{globals.urlFolder}}png/Update - 1.png">Cập nhật trạng thái</button>
+        </li>
+        <li><img src="{{globals.urlFolder}}png/setting-4.png" class="btn-filter" (click)="changeStatus()"></li>
+    </ul> -->
+</div>

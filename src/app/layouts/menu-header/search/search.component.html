@@ -1,0 +1,17 @@
+<div
+    class="search-box"
+    [class]="search === true ? 'search-box1' : 'search-box2'"
+>
+    <input
+        (input)="handleChangeValueSearch($event.target.value)"
+        class="text"
+        placeholder="Search"
+        type="text"
+        [class]="search === true ? 'search-text' : 'remove-search'"
+    >
+    <img
+        [class]="search === true ? 'img-search' : ''"
+        src="assets/png/Search.png"
+        (click)="showSearch()"
+    >
+</div>

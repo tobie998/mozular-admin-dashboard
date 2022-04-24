@@ -1,0 +1,18 @@
+<div class="group-btn" [style.text-align]="position">
+    <img [class.small]="isSmall" *ngIf="buttonType?.edit" src="assets/svg/emr-admin-icon-edit.svg" (click)="handleEventDetail('edit')" />
+    <img [class.small]="isSmall" *ngIf="buttonType?.delete" src="assets/svg/emr-admin-icon-delete.svg" (click)="handleEventDetail('delete')" />
+    <button *ngIf="buttonType?.cancel" class="ci-button-cancel" (click)="handleEventDetail('cancel')">Cancel</button>
+    <button *ngIf="buttonType?.cancelDialog" class="ci-button-cancel" (click)="handleEventDetail('cancelDialog')">Cancel</button>
+    <button *ngIf="buttonType?.save" class="ci-button-save" (click)="handleEventDetail('save')">Save</button>
+    <button *ngIf="buttonType?.confirm" class="ci-button-save" (click)="handleEventDetail('confirm')">Confirm</button>
+    <img [class.small]="isSmall" *ngIf=" buttonType?.add " (click)="handleEventDetail( 'add') " src="assets/svg/icon-add.svg ">
+    <button *ngIf="buttonType?.resign " class="ci-button-save " (click)="handleEventDetail( 'resign') ">Deactive</button>
+    <button *ngIf="buttonType?.active " class="ci-button-save " (click)="handleEventDetail( 'active') ">Active</button>
+    <button *ngIf="buttonType?.edit2 " class="ci-button-save " (click)="handleEventDetail( 'edit') ">Edit</button>
+    <button *ngIf="buttonType?.renew " class="ci-button-save " (click)="handleEventDetail( 'renew') ">Renew</button>
+    <button *ngIf="buttonType?.history " class="ci-button-save " (click)="handleEventDetail( 'history') ">Payment History</button>
+    <button *ngIf="buttonType?.method " class="ci-button-save " (click)="handleEventDetail( 'method') ">Add new method</button>
+    <button *ngIf="buttonType?.setDefault " class="ci-button-save ci-button-default " (click)="handleEventDetail( 'setDefault') ">Set as default</button>
+    <button *ngIf="buttonType?.change" class="ci-button-save " (click)="handleEventDetail( 'change') ">Change</button>
+    <button *ngIf="buttonType?.choose" class="ci-button-save " (click)="handleEventDetail( 'choose') ">Choose</button>
+</div>

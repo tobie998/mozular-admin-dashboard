@@ -1,0 +1,41 @@
+<div class="list-components">
+    <div
+        class="row "
+        [class]="checkLayout<=8 ? 'row-layout' :'list-medication'"
+    >
+        <div
+            class="col-3" style="max-width: 100%"
+            *ngFor="let item of data; let i = index"
+        >
+            <div
+                class="list-item"
+                (click)="routeTo(item)"
+            >
+                <div *ngIf="check">
+                    <img (error)="setDefaultPic(item)"
+                        class="item-avatar"
+                        [src]="item.MediaURL"
+                    >
+                </div>
+                <div class="item-info">
+                    <div *ngFor="let a of config">
+
+                        <div
+                            *ngIf="a.type !== 'link'"
+                            [class]="a.cssClass"
+                        >
+                            <p>
+                              <ng-container *ngIf="a.condition =='id'">ID: </ng-container>
+                              <ng-container *ngIf="a.condition =='ProviderCode'">ID: </ng-container>
+                              <ng-container *ngIf="a.type === 'number'">{{ item[a.condition] | number }}</ng-container>
+                              <ng-container *ngIf="a.type === 'text'">{{ item[a.condition] }}</ng-container>
+                              <ng-container *ngIf="a.type === 'object'">{{ item[a.condition][a.idSub] }}</ng-container>
+                              <ng-container *ngIf="a.type === 'date'">{{ item[a.condition] | date: "dd-MM-YYYY" }}</ng-container>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

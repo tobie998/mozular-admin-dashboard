@@ -1,0 +1,68 @@
+.modal-component{
+    .title{
+        font-size: 18px;
+        font-weight: 600;
+        color: #1A1A1A;
+        margin-bottom: 40px;
+    }
+    .row{
+        margin-bottom: 20px;
+        .label{
+            font-size: 1em;
+            color: #707070;
+        }
+        .detail{
+            font-size: 1em;
+            color: #1A1A1A;
+        }
+        .button{
+            display: flex;
+            label{
+                width: 175px;
+                height: 32px;
+                background-color: #A2A2A2;
+                color: #FFFFFF;
+                border-radius: 20px;
+                outline: none;
+                margin-right: 20px;
+                border: none;
+                text-align: center;
+                padding-top: 2px;
+                cursor: pointer;
+
+                img{
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                }
+            }
+            input[type="file"] {
+				display: none;
+			}
+        }
+    } 
+    .save{
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+.swiper-container{
+    margin-left: -30px;
+    margin-top: 20px;
+    .swiper-slide{
+        text-align: center !important;
+    }
+    .image-item{
+        border-radius: 20px;
+        width: 200px;
+        height: 300px;
+    }
+    .close-img{
+        position: absolute;
+        right: 16%;
+        background: #707070;
+        top: 2%;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+   
+}

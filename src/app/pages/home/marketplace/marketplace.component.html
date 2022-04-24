@@ -1,0 +1,64 @@
+<div class="main-content">
+    <div class="main_banner">
+        <img src="{{globals.urlFolder}}png/banner.png">
+    </div>
+    <!-- <div class="create-module">
+        <button type="button"><img src="{{globals.urlFolder}}png/Add.png"> Thêm module</button>
+    </div> -->
+    <div class="title">
+        <p>Tất cả module</p>
+    </div>
+    <ul class="list-module">
+        <ng-container *ngFor="let item of lstModule">
+            <li style="background: #414141;" [style.backgroundColor]="item.name | colorbytext">
+                <app-card [data]="item" (callBack)="showDetail(item)"></app-card>
+            </li>
+        </ng-container>
+        
+        <!-- <li style="background: #6CA5D0;">
+            <div class="box-txt">
+                <p class="name-module">Bus Tracker</p>
+                <p class="desc-module">Human resource management</p>
+                <span class="edit-module">
+                    <img src="{{globals.urlFolder}}png/Group 990.png">
+                </span>
+            </div>
+            <div class="box-img">
+                <img src="{{globals.urlFolder}}png/Rectangle 101.png">
+            </div>
+            <div class="btn-detail">
+                <button>Chi tiết <img src="{{globals.urlFolder}}png/Drop down.png"></button>
+            </div>
+        </li>
+        <li style="background: #EAB334;">
+            <div class="box-txt">
+                <p class="name-module">Moz Check</p>
+                <p class="desc-module">Human resource management</p>
+                <span class="edit-module">
+                    <img src="{{globals.urlFolder}}png/Group 990.png">
+                </span>
+            </div>
+            <div class="box-img">
+                <img src="{{globals.urlFolder}}png/Rectangle 102.png">
+            </div>
+            <div class="btn-detail">
+                <button>Chi tiết <img src="{{globals.urlFolder}}png/Drop down.png"></button>
+            </div>
+        </li>
+        <li style="background: #2D8AF4;">
+            <div class="box-txt">
+                <p class="name-module">ERP</p>
+                <p class="desc-module">Human resource management</p>
+                <span class="edit-module">
+                    <img src="{{globals.urlFolder}}png/Group 990.png">
+                </span>
+            </div>
+            <div class="box-img">
+                <img src="{{globals.urlFolder}}png/Rectangle 103.png">
+            </div>
+            <div class="btn-detail">
+                <button>Chi tiết <img src="{{globals.urlFolder}}png/Drop down.png"></button>
+            </div>
+        </li> -->
+    </ul>
+</div>

@@ -1,0 +1,192 @@
+@import "./variables.scss";
+.confirmation {
+    padding: 0 1rem;
+
+    .header {
+        margin-bottom: 3.20375rem;
+    }
+
+    .main {
+
+        .main-info {
+            margin-bottom: 4.01625rem;
+
+            img {
+                // width: 100%;
+                height: 100%;
+            }
+        }
+
+        .main-input {
+            margin-bottom: 3.515rem;
+
+            label {
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: 32px;
+                letter-spacing: 0.0015rem;
+                text-align: center;
+                color: $text-color-6;
+                margin-bottom: 1.125rem;
+            }
+
+            .input-holder {
+                display: grid;
+                grid-template-columns: repeat(6, 17%);
+
+                input[type="text"] {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    background: inherit;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid $text-color-1;
+                    color: $text-color-1;
+                    padding: 0 1rem 1.5rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        .main-btn {
+            padding-bottom: 12.125rem;
+            text-align: center;
+
+            .btn-resend,
+            .btn-cf {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: 19.5px;
+                letter-spacing: 0.0125rem;
+                border: none;
+            }
+
+            .btn-resend {
+                padding: 0.875rem 0.9375rem;
+                color: $text-color-6;
+                background: inherit;
+                border-radius: 38px;
+                box-shadow: 0 0 0 2px $border-color-4 inset;
+                margin-right: 2rem;
+                transition: all 0.3s ease-out;
+                border: none;
+
+                &:hover {
+                    color: $text-color-0;
+                    background: $bg-color-4;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            .btn-cf {
+                padding: 0.875rem 2rem;
+                color: $text-color-0;
+                background: $bg-color-7;
+                border-radius: 38px;
+                transition: all 0.3s ease-out;
+
+                &:hover {
+                    color: $text-color-6;
+                    background: $bg-color-0;
+                    box-shadow: 0 0 0 1px $border-color-7 inset;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .confirmation {
+    
+        .main {
+    
+            .main-btn {
+    
+                .btn-cf {
+                    padding: 0.875rem 4.75rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .confirmation {
+        padding: 0 6.125rem;
+    
+        .main {
+    
+            .main-input {
+
+                .input-holder {
+    
+                    input[type="text"] {
+                        height: 5.375rem;
+                        font-size: 3.1875rem;
+                        padding: 0 2.1875rem 1.5rem 2.25rem;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    .confirmation {
+        padding: 0 12.5rem;
+    }
+}
+
+@media screen and (width: 1024px) and (max-device-height: 1366px) {
+    .confirmation {
+
+        .main {
+            height: 100vh;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .confirmation {
+        padding: 0;
+
+        .header {
+            padding: 2rem 27.5rem 0;
+        }
+
+        .main {
+            padding: 0 27.5rem; 
+
+            .main-info {
+                text-align: center;
+
+                svg {
+                    width: 28.5rem;
+                    height: 20.75rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .confirmation {
+
+        .main {
+            padding: 0 37.8125rem; 
+
+            .main-info {
+                text-align: center;
+
+                svg {
+                    width: 28.5rem;
+                    height: 20.75rem;
+                }
+            }
+        }
+    }
+}
+

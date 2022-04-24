@@ -1,0 +1,119 @@
+<div
+    class="form-create"
+    [style.height]="configCss?.height"
+    [class]="configCss?.css"
+>
+    <div class="content row">
+        <div
+            class="col-avatar"
+            [class]="option?.avatar === true ? 'col-lg-2 cc' :'acb'"
+        >
+            <div
+                class="avatar"
+                *ngIf="option.avatar"
+            >
+                <img
+                    *ngIf="profileImageString"
+                    [src]="profileImageString"
+                    class="img-fluid"
+                />
+                <br />
+                <label for="profileImage" *ngIf="button?.isEventUpdate">
+                    <img src="assets/svg/camera-icon.svg" />
+                </label>
+                <input
+                    #ProfileImage *ngIf="button?.isEventUpdate"
+                    type="file"
+                    accept="image/png, image/jpeg"
+                    id="profileImage"
+                    (change)="processFileProfileImage(ProfileImage.files)"
+                    hidden
+                    required
+                />
+                <br />
+            </div>
+        </div>
+        <div [class]="option?.avatar === true ? 'col-lg-10' :'col-12'">
+            <div class="row">
+                <div
+                    class="col-6 title"
+                    [class]="option?.avatar === true ? 'col-6 title' :'acb'"
+                >
+                    {{option?.title}}
+                </div>
+                <div class="col-6 d-flex align-item-center justify-content-end ">
+                    <app-button
+                        *ngIf="button?.isEventUpdate"
+                        class="action"
+                        [isSmall]="true"
+                        [buttonType]="button?.listUpdate"
+                        (callback)="handleEvent($event)"
+                    ></app-button>
+                    <app-button
+                        *ngIf="!button?.isEventUpdate"
+                        class="action"
+                        [isSmall]="true"
+                        [buttonType]="button?.listNoUpdate"
+                        (callback)="handleEvent($event)"
+                    ></app-button>
+                </div>
+                <div
+                    *ngFor="let item of data"
+                    class=" list" [ngStyle]="{opacity: (item?.hidden === true)? 0 : 1}"
+                    [class]="option?.col"
+                >
+                    <div class=" title-input"> {{item?.label}} <span *ngIf="item?.required">*</span> </div>
+                    <div
+                        class=" "
+                        [class]="item.class"
+                    >
+                        <div
+                            *ngIf="item.type ==='email' || item.type ==='text' || item.type ==='number' || item.type ==='file' || item.type ==='date'">
+                            <input
+                                [readonly]="!button?.isEventUpdate"
+                                [class.text-full]="isService"
+                                [class.input-text]="true"
+                                [type]="item.type"
+                                [id]="item.id"
+                                [name]="item.name"
+                                [(ngModel)]="model[item.id]"
+                                [readonly]="(!button?.isEventUpdate)? 'true': ''"
+                            >
+                            <!-- <p><u>{{model[item.id]}}</u></p> -->
+                        </div>
+                        <div *ngIf="item.type ==='selected'">
+                            <select
+                                class="input-text"
+                                [(ngModel)]="model[item.id]" [disabled]="(!button?.isEventUpdate)? true : null"
+                            >
+                                <option
+                                    *ngFor="let i of item.data"
+                                    [ngValue]="i?.value"
+                                >
+                                    {{i?.Name}}
+                                </option>
+                            </select>
+                        </div>
+                        <!-- chưa customer-->
+                        <div *ngIf="item.type ==='radio'">
+                            <mat-radio-group
+                                [(ngModel)]="model[item.id]"
+                                aria-label="Select an option"
+                            >
+                                <mat-radio-button value="1">Nam</mat-radio-button>
+                                <mat-radio-button value="2">Nữ</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                        <div *ngIf="item.type ==='checkbox'">
+                            checkbox
+                        </div>
+                        <div *ngIf="item.type ==='link'">
+                            link
+                        </div>
+                    </div>
+                </div>
+                <ng-content></ng-content>
+            </div>
+        </div>
+    </div>
+</div>

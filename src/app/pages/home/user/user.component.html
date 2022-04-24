@@ -1,0 +1,61 @@
+<div class="list-btn-payment">
+    <div class="input-search">
+    </div>
+    <ul>
+        <li>
+            <button class="btn-create-order" (click)="addMember()">Thêm người dùng</button>
+        </li>
+        <li>
+            <button class="update-status" (click)="editMember()">
+               Sửa thông tin</button>
+        </li>
+    </ul>
+</div>
+<div class="main-content">
+    <!-- <div class="list-btn-payment">
+        <ul>
+            <li>
+                <button class="btn-create-order" (click)="addMember()">Thêm người dùng</button>
+            </li>
+            <li>
+                <button class="update-status"><img src="{{globals.urlFolder}}png/Update - 1.png">Cập nhật trạng thái</button>
+            </li>
+        </ul>
+    </div> -->
+    <div class="list-tab-content">
+        <div class="list-user">
+            <table class="table-mozular">
+                <thead>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="all">
+                            <label for="all"></label>
+                        </td>
+                        <td>Username</td>
+                        <td>Email</td>
+                        <td>Phone</td>
+                        <td>Status</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users; let i = index">
+                        <td>
+                            <input type="checkbox" [id]="i" [(ngModel)]="user.isCheck">
+                            <label [for]="i"></label>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <img src="{{globals.urlFolder}}png/Avatar1.png">
+                                <span class="username">{{user.user_id}}</span>
+                            </div>
+                        </td>
+                        <td><span>{{user.email}}</span></td>
+                        <td><span>{{user.phone}}</span></td>
+                        <td><span class="deactive">Deactive</span></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

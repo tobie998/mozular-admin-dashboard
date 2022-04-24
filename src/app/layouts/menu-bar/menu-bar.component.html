@@ -1,0 +1,65 @@
+<!-- <div class="menu-bar">
+    <div class="menu-bar-content">
+        <div class="logo">
+          <ng-container *ngIf="companyDetal && companyDetal.MediaURL && !companyDetal?.MediaURL.includes('logo.jpg'); else  templateImg" >
+            <img src="{{companyDetal?.MediaURL}}">
+          </ng-container>
+          <ng-template #templateImg>
+            <img src="assets/svg/logo-big.svg">
+          </ng-template>
+        </div>
+        <div class="nav-bar">
+            <div class="nav-item" *ngFor="let item of listNav" routerLinkActive="selected">
+                <a class="nav-link" [routerLink]="item.router">
+                    <img [src]="item.icon" />
+                    <div class="nav-link-text">{{item.name}}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="logo">
+  <div>
+    <img src="{{globals.urlFolder}}png/logo-light.png" class="logo-desktop">
+    <img src="{{globals.urlFolder}}png/logo-light-small.png" class="logo-table">
+  </div>
+  <div class="nav-icon" (click)="toggerMenu()">
+    <img [ngClass]="{'small': menu === true}" src="{{globals.urlFolder}}png/Group 989.png">
+  </div>
+</div>
+
+<div class="menu">
+  <ul>
+    <li *ngFor="let item of listNav" routerLinkActive="active">
+      <a [routerLink]="item.router">
+        <img [src]="item.iconActive" alt="">
+        <img [src]="item.icon" alt="">
+        <span>{{item.name}}</span>
+      </a>
+  </ul>
+  <!-- <ul>
+    <li *ngFor="let item of listNav" routerLinkActive="active">
+      <a [routerLink]="item.router">
+        <img [src]="item.icon" alt="">
+        <span>{{item.name}}</span>
+      </a>
+  </ul> -->
+</div>
+
+<div class="btn-mode mode-light">
+  <button>
+    <div class="box-img">
+      <img src="{{globals.urlFolder}}png/sun.png" class="dark">
+      <img src="{{globals.urlFolder}}png/sun1.png" class="light">
+    </div>
+    <span>Dark</span>
+  </button>
+  <button class="active">
+    <div class="box-img">
+      <img src="{{globals.urlFolder}}png/moon.png" class="dark">
+      <img src="{{globals.urlFolder}}png/moon1.png" class="light">
+    </div>
+    <span>Light</span>
+  </button>
+</div>

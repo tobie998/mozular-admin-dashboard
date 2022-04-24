@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g id="Group_1920" data-name="Group 1920" transform="translate(0.026 0.93)">
+    <g id="Group_1102" data-name="Group 1102" transform="translate(0 0)">
+      <g id="_add_circle_outline" data-name=" add_circle_outline" transform="translate(0 0)">
+        <rect id="Path" width="68" height="68" transform="translate(0.474 -0.43)" fill="rgba(0,0,0,0)"/>
+        <path id="Icon" d="M34.5,69A34.5,34.5,0,1,1,69,34.5,34.539,34.539,0,0,1,34.5,69Zm0-62.1A27.6,27.6,0,1,0,62.1,34.5,27.635,27.635,0,0,0,34.5,6.9ZM34.5,51.751A3.453,3.453,0,0,1,31.051,48.3V37.949H20.7a3.449,3.449,0,1,1,0-6.9h10.35V20.7a3.449,3.449,0,1,1,6.9,0v10.35H48.3a3.449,3.449,0,1,1,0,6.9H37.949V48.3A3.456,3.456,0,0,1,34.5,51.751Z" transform="translate(0.474 -0.43)" fill="#4d4d4d" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

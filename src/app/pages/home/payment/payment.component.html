@@ -1,0 +1,7 @@
+<main>
+    <app-search-payment (callback)="search($event)"></app-search-payment>
+
+    <div class="main-content">
+        <app-list-payment [dataInput]="listData" (callback)="active($event)"></app-list-payment>
+    </div>
+</main>

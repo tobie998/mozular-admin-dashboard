@@ -1,0 +1,105 @@
+<div class="main_tracker">
+    <div class="main_head">
+      <div class="image_banner">
+        <img [src]="moduleDetail.image1" />
+      </div>
+      <div class="banner_content">
+        <!-- <img src="{{globals.urlFolder}}png/Logo_1@4x 1.png" id="logo" /> -->
+        <div class="time_price" id="changecolor">
+          <div class="left changeLeft" id="tent">
+            <h2>{{moduleDetail.name}}</h2>
+            <h3>{{moduleDetail.description}}</h3>
+            <p *ngIf="showMore === false">
+                {{moduleDetail.short_description}}
+            </p>
+            <p *ngIf="showMore === true">
+                {{moduleDetail.full_description}}
+            </p>
+            <button *ngIf="showMore === false" class="take_add" (click)="showMore = true">
+              <span id="add">Xem thêm</span>
+              <img id="addArrow" src="{{globals.urlFolder}}png/Group 6.png" />
+            </button>
+          </div>
+          <div class="right" id="rightchange">
+            <div class="bill">
+              <img src="{{globals.urlFolder}}png/money.png" />
+              <p id="count">Giá: </p>
+              <p id="money">{{moduleDetail.price}}{{moduleDetail.currency}}</p>
+            </div>
+            <!-- <div>
+              <button class="addcart" (click)="addCart()">
+                <span>Thêm vào giỏ hàng</span>
+                <img src="{{globals.urlFolder}}png/cart-w.png" />
+            </button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content_rule">
+      <div class="on_content">
+        <div class="on_left">
+          <h2 id="color_change" class="color_descript">Mô tả chi tiết</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris sit quisque felis libero sed ultrices lacus, eleifend.
+            Diam posuere leo, penatibus egestas purus facilisis proin
+            nunc.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris sit quisque felis libero sed ultrices lacus, eleifend.
+            Diam posuere leo, penatibus egestas purus facilisis proin
+            nunc.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris sit quisque felis libero sed ultrices lacus, eleifend.
+            Diam posuere leo, penatibus egestas purus facilisis proin
+            nunc.
+          </p>
+        </div>
+        <div class="on_image" id="module_image">
+          <img [src]="moduleDetail.image2" id="detail_image" />
+        </div>
+      </div>
+      <div class="down_content">
+        <div class="down_left" id="down_image">
+          <img [src]="moduleDetail.image3" id="image_module" />
+        </div>
+        <div class="down_right">
+          <div class="note">
+            <h2 class="change_feature">Feature 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Mauris sit quisque felis libero sed ultrices lacus,
+              eleifend. Diam posuere leo, penatibus egestas purus
+              facilisis proin nunc. Consectetur pulvinar pretium feugiat
+              enim, convallis. Massa sed diam sed sociis purus.
+            </p>
+          </div>
+          <div class="note">
+            <h2 class="change_feature">Feature 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Mauris sit quisque felis libero sed ultrices lacus,
+              eleifend. Diam posuere leo, penatibus egestas purus
+              facilisis proin nunc. Consectetur pulvinar pretium feugiat
+              enim, convallis. Massa sed diam sed sociis purus.
+            </p>
+          </div>
+          <div class="note">
+            <h2 class="change_feature">Feature 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Mauris sit quisque felis libero sed ultrices lacus,
+              eleifend. Diam posuere leo, penatibus egestas purus
+              facilisis proin nunc. Consectetur pulvinar pretium feugiat
+              enim, convallis. Massa sed diam sed sociis purus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

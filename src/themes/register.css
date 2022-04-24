@@ -1,0 +1,242 @@
+/*  White color */
+/* Black color */
+/* Primary color */
+/* Gradient */
+/* Alert color*/
+/*  White color */
+/* Black color */
+/* Text color */
+/* Primary color */
+/* Gradient */
+/* Alert color*/
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(./../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(./../fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(./../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(./../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(./../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(./../fonts/Nunito-Regular.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.member-deactive {
+  color: #FF3E33 !important;
+}
+
+.member-active {
+  color: #21AB36 !important;
+}
+
+.register {
+  background: #F7F7F7;
+  font-family: "Montserrat";
+  padding: 0 1rem;
+}
+.register .header {
+  padding: 2rem 0 0 0rem;
+  display: flex;
+  align-items: center;
+}
+.register .header img {
+  width: 36px;
+  height: 24px;
+  margin-right: 1.5rem;
+}
+.register .header h6 {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.0015rem;
+  color: #2E2E2E;
+  margin: 0;
+}
+.register .main-register {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.register .main-register .register-avatar {
+  background-size: contain;
+  width: 14.625rem;
+  height: 14.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.3575rem auto 2.25rem;
+  cursor: pointer;
+  border: 2px dashed #9F9F9F;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+.register .main-register .register-avatar p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.01rem;
+  color: #2E2E2E;
+  margin-top: 0.5rem;
+}
+.register .main-register .register-form {
+  margin-bottom: 3.9rem;
+}
+.register .main-register .register-form .form-left .main-input,
+.register .main-register .register-form .form-right .main-input {
+  position: relative;
+}
+.register .main-register .register-form .form-left .main-input label,
+.register .main-register .register-form .form-right .main-input label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.01rem;
+  color: #9F9F9F;
+}
+.register .main-register .register-form .form-left .main-input input[type=text],
+.register .main-register .register-form .form-left .main-input input[type=date],
+.register .main-register .register-form .form-left .main-input input[type=password],
+.register .main-register .register-form .form-right .main-input input[type=text],
+.register .main-register .register-form .form-right .main-input input[type=date],
+.register .main-register .register-form .form-right .main-input input[type=password] {
+  width: 100%;
+  display: block;
+  background: inherit;
+  color: #2E2E2E;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #9F9F9F;
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: 0.005rem;
+  padding: 0.75rem 0;
+}
+.register .main-register .register-form .form-left .main-input ::-moz-placeholder, .register .main-register .register-form .form-right .main-input ::-moz-placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.register .main-register .register-form .form-left .main-input :-ms-input-placeholder, .register .main-register .register-form .form-right .main-input :-ms-input-placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.register .main-register .register-form .form-left .main-input ::placeholder,
+.register .main-register .register-form .form-right .main-input ::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.register .main-register .register-form .form-left .main-input input:focus,
+.register .main-register .register-form .form-right .main-input input:focus {
+  border-bottom: 1px solid #E1C579;
+}
+.register .main-register .register-form .form-left .main-input input:focus::-webkit-input-placeholder,
+.register .main-register .register-form .form-right .main-input input:focus::-webkit-input-placeholder {
+  color: #9F9F9F;
+  font-weight: 500;
+}
+.register .main-register .register-form .form-left .main-input .delete-btn,
+.register .main-register .register-form .form-right .main-input .delete-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+.register .main-register .register-form .form-left .main-input .delete-btn img,
+.register .main-register .register-form .form-right .main-input .delete-btn img {
+  width: 1.5rem;
+  height: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.register .main-register .register-form .form-left .main-input .delete-btn-active,
+.register .main-register .register-form .form-right .main-input .delete-btn-active {
+  display: block;
+}
+.register .main-register .register-form .form-left .main-input:not(:last-child),
+.register .main-register .register-form .form-right .main-input:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.register .main-register .register-btn {
+  text-align: right;
+}
+.register .main-register .register-btn .btn {
+  padding: 0.875rem 6.0625rem;
+  background: #E1C579;
+  color: #1A1A1A;
+  border-radius: 38px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19.5px;
+  border: none;
+  outline: none;
+}
+.register .main-register .register-btn .btn:hover {
+  background: #F7F7F7;
+  color: #2E2E2E;
+  box-shadow: 0 0 0 1px #9F9F9F inset;
+}
+.register .main-register .register-btn .btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #E1C579 inset;
+}
+
+@media screen and (min-width: 768px) {
+  .register {
+    padding: 0 6.125rem;
+    height: 1080px;
+  }
+  .register .header svg {
+    width: 2.25rem;
+    height: 1.5rem;
+  }
+  .register .main-register {
+    padding-bottom: 10.4375rem;
+    padding-top: 10.4375rem;
+  }
+  .register .main-register .register-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    margin-bottom: 2.25rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .register {
+    padding: 0 12.5rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .register {
+    padding: 0 27.5rem;
+  }
+}/*# sourceMappingURL=register.css.map */

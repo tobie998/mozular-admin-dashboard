@@ -1,0 +1,59 @@
+.ci-button {
+    &-save {
+        padding: 5px 25px;
+        background-color: var(--ci-color-ecko-blue);
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 500;
+        box-shadow: 3px 3px 9px #c9c9c9, -5px -5px 9px #ffffff;
+        border-radius: 25px;
+        border: none;
+        margin-left: 10px;
+        outline: none;
+        mat-spinner {
+            position: absolute;
+            top: 15px;
+            right: 5px;
+        }
+    }
+    &-cancel {
+        padding: 5px 15px;
+        background-color: transparent;
+        color: #8da2ae;
+        line-height: 35px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 25px;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    &-cancel-swal {
+        background-color: #ffffff;
+        color: #8da2ae;
+        line-height: 35px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        width: 181px;
+        height: 46px;
+    }
+    &-confirm-swal {
+        background-color: #9FB9C8;
+        color: white;
+        line-height: 35px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        width: 181px;
+        height: 46px;
+    }
+}
+button{
+    outline: none !important;
+}

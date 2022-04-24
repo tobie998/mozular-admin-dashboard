@@ -1,0 +1,27 @@
+.mat-tab-group {
+    width: 95%;
+    min-height: 80vh;
+    margin-left: 20px;
+    border: none;
+    border-radius: 18px;
+    box-shadow: inset 5px 5px 10px #cccccc, inset -5px -5px 10px #ffffff;
+    ::ng-deep {
+        .mat-tab-labels {
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: inset 5px 5px 10px #cccccc, inset -5px -5px 10px #ffffff;
+            height: 100%;
+        }
+        .mat-tab-label {
+            width: 50% !important;
+            font-size: 29px;
+            font-weight: 500;
+            height: 95px;
+        }
+        .mat-ink-bar {
+            background-color: #333333 !important;
+            margin-bottom: 10px;
+            height: 4px;
+        }
+    }
+}

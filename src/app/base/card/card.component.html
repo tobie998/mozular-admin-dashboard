@@ -1,0 +1,18 @@
+<div class="bg-card"><img [src]="data.image1"><span *ngIf="!data.image1">no images</span></div>
+<div class="card-module">
+    <div class="box-txt">
+        <div style="overflow: hidden;">
+            <p class="name-module">{{data.name}}</p>
+            <p class="desc-module">{{data.short_description}}</p>
+        </div>
+        <!-- <span class="edit-module">
+            <img src="{{globals.urlFolder}}png/Group 990.png">
+        </span> -->
+    </div>
+    <div class="box-img">
+        <img [src]="data.image1">
+    </div>
+    <div class="btn-detail">
+        <button (click)="showDetail()">Chi tiết <img src="{{globals.urlFolder}}png/Drop down.png"></button>
+    </div>
+</div>

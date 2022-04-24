@@ -1,0 +1,121 @@
+/*  White color */
+/* Black color */
+/* Primary color */
+/* Gradient */
+/* Alert color*/
+/*  White color */
+/* Black color */
+/* Text color */
+/* Primary color */
+/* Gradient */
+/* Alert color*/
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(./../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(./../fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(./../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(./../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(./../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(./../fonts/Nunito-Regular.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.member-deactive {
+  color: #FF3E33 !important;
+}
+
+.member-active {
+  color: #21AB36 !important;
+}
+
+.success {
+  font-family: "Montserrat", sans-serif;
+  padding: 3rem 1rem;
+}
+.success .success-info {
+  margin-bottom: 3.28125rem;
+}
+.success .success-info svg {
+  width: 100%;
+  height: 100%;
+}
+.success .success-text {
+  font-size: 1.3125rem;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.0015rem;
+  color: #2E2E2E;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.success .success-btn {
+  text-align: center;
+}
+.success .success-btn .btn {
+  height: 3rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 17.07px;
+  letter-spacing: 0.0125rem;
+  padding: 0.96875rem 1.5rem;
+  color: #1A1A1A;
+  background: #E1C579;
+  border-radius: 24px;
+}
+.success .success-btn .btn:hover {
+  background: inherit;
+  color: #2E2E2E;
+  box-shadow: 0 0 0 1px #E1C579 inset;
+}
+
+@media screen and (min-width: 768px) {
+  .success {
+    padding: 15rem 6.125rem 20.01625rem;
+  }
+  .success .success-info {
+    text-align: center;
+  }
+  .success .success-info img {
+    height: 20.7025rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .success {
+    padding: 15rem 12.5rem 20.01625rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .success {
+    padding: 15rem 27.5rem 20.01625rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .success {
+    padding: 15rem 47.5rem 20.01625rem;
+  }
+}/*# sourceMappingURL=success.css.map */
